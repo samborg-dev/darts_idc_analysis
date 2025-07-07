@@ -1,7 +1,11 @@
 import adds
 import pandas as pd
 import seaborn as sns
+import matplotlib
 import matplotlib.pyplot as plt
+
+# Required to show plt plots in Streamlit
+matplotlib.use("TkAgg")
 
 master = adds.get_master(dendrite_score_col=True)
 

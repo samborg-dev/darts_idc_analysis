@@ -1,8 +1,12 @@
 # Plot mean failure time vs solution, separated by pattern, sensor, and voltage.
 
 import adds
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+# Required to show plt plots in Streamlit
+matplotlib.use("TkAgg")
 
 # Get master data
 master = adds.get_master()

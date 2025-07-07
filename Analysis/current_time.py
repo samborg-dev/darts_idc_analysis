@@ -3,8 +3,12 @@
 # joined data from cleans.py.
 
 import adds
+import matplotlib
 import matplotlib.pyplot as plt
 import seaborn as sns
+
+# Required to show plt plots in Streamlit
+matplotlib.use("TkAgg")
 
 # Get joined data
 master_current_time = adds.get_master_current_time()

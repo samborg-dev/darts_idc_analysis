@@ -1,7 +1,11 @@
 # plots Ph as a function of Time to Failure (ms), colored by solution type
 import seaborn as sns
+import matplotlib
 import matplotlib.pyplot as plt
 import adds
+
+# Required to show plt plots in Streamlit
+matplotlib.use("TkAgg")
 
 def plot_ph():
     
