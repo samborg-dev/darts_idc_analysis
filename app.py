@@ -31,7 +31,10 @@ if st.button("RGB Analysis 3D"):
     run_plot_script("rgb_3d.py")
 
 if st.button("RGB Analysis Box Plots"):
-    run_plot_script("dendrites.py")
+    run_plot_script("rgb_boxplots.py")
+
+if st.button("Correlation Heatmap"):
+    run_plot_script("corr_heatmap.py")
 
 if st.button("Current Vs Time"):
     run_plot_script("current_time.py")
