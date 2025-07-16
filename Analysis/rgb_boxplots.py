@@ -3,6 +3,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib
 import matplotlib.pyplot as plt
+from idc_data_parser import IDCDataParser
 
 # Required to show plt plots in Streamlit
 matplotlib.use("TkAgg")
@@ -44,4 +45,6 @@ g.set_titles(col_template="{col_name}")
 # Set ticks to ints, not floats
 g.set_xticklabels([1, 4, 7, 10])
 
-plt.show()
+if __name__ == "__main__":
+    parser = IDCDataParser()
+    parser.plot_rgb_boxplots(show=True)

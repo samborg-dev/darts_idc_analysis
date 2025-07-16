@@ -1,0 +1,16 @@
+direction: down
+
+idp: "InstrumentDataParser"
+analysis: "Analysis"
+idpo: "InstrumentDataParserOutputer"
+visual: "Visualizer"
+db: "Database"
+
+idp: {
+  RawData
+}
+
+idp -> analysis: "Runs logic of analysis scripts object orientedly"
+analysis -> idpo: "Outputs data automatically"
+idpo -> visual: "Outputs graphs & visuals"
+idpo -> db: "Outputs to a database"

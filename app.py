@@ -2,6 +2,11 @@ import streamlit as st
 import subprocess
 import sys
 import os
+import matplotlib.pyplot as plt
+
+# Add Analysis directory to sys.path for module resolution
+sys.path.append(os.path.join(os.path.dirname(__file__), "Analysis"))
+from Analysis.idc_data_parser import IDCDataParser
 
 # Get important file paths, works when this script is run in any CWD
 script_path = os.path.abspath(__file__)
